@@ -8,9 +8,7 @@ export default function Users() {
         { id: 3, name: 'John3', check: false },
     ])
 
-    const [active, setActive] = useState([
-        // { id: 4, name: 'John', check: false },
-    ])
+    const [active, setActive] = useState([])
 
     const addButton = (value) => {
         if (value === "users") {
@@ -58,7 +56,7 @@ export default function Users() {
                 <div className="col-md-6">
                     <div className="card">
                         <div className="card-header">
-                            <h1 className='text-center'>Active</h1>
+                            <h1 className='text-center'>Users</h1>
                         </div>
                         <div className="card-body">
                             <table className=' table table-bordered table-striped'>
@@ -80,7 +78,7 @@ export default function Users() {
                 <div className="col-md-6">
                     <div className="card">
                         <div className="card-header">
-                            <h1 className='text-center'>Users</h1>
+                            <h1 className='text-center'>Active</h1>
                         </div>
                         <div className="card-body">
                             <table className=' table table-bordered table-striped'>

@@ -57,7 +57,7 @@ export default function UsersForm() {
     }
     return (
         <div className="container my-5">
-            <ModalApp modal={modal} toggle={()=>setModal(false) } users={users} setUsers={setUsers}/>
+            <ModalApp modal={modal} toggle={() => setModal(false)} users={users} setUsers={setUsers} />
             <div className="row">
                 <div className="col-8 offset-2 mt-5">
                     <button onClick={setModal} className="btn btn-primary">Add</button>

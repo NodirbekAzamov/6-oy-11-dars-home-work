@@ -12,7 +12,9 @@ export default function ModalApp({ modal, toggle, users, setUsers }) {
         let paylod = {
             firstname,
             lastname,
-            phone
+            phone,
+            status: false,
+            count: 0,
         }
         setUsers([...users, {...paylod}])
     }
